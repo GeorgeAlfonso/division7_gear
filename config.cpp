@@ -507,67 +507,67 @@ class CfgVehicles
 		scope = 1;
 		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
 		hiddenSelections[] = {"camo", "camo2", "insignia", "A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_black_basic.paa", "division7_gear\Data\Uniform\DIV7_uniform_black_basic.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_black_basic.paa", "division7_gear\Uniform\DIV7_uniform_black_basic.paa"};
 		uniformclass = "Uniform_Black_Basic";
 	};
 	class DIV7_Uniform_Black_Splinter : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_black_splinter.paa", "division7_gear\Data\Uniform\DIV7_uniform_black_splinter.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_black_splinter.paa", "division7_gear\Uniform\DIV7_uniform_black_splinter.paa"};
 		uniformclass = "Uniform_Black_Splinter";
 	};
 	class DIV7_Uniform_Black_Woodland : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_black_woodland.paa", "division7_gear\Data\Uniform\DIV7_uniform_black_woodland.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_black_woodland.paa", "division7_gear\Uniform\DIV7_uniform_black_woodland.paa"};
 		uniformclass = "Uniform_Black_Woodland";
 	};
 	class DIV7_Uniform_White_Basic : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_white_basic.paa", "division7_gear\Data\Uniform\DIV7_uniform_white_basic.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_white_basic.paa", "division7_gear\Uniform\DIV7_uniform_white_basic.paa"};
 		uniformclass = "Uniform_White_Basic";
 	};
 	class DIV7_Uniform_White_Splinter : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_white_splinter.paa", "division7_gear\Data\Uniform\DIV7_uniform_white_splinter.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_white_splinter.paa", "division7_gear\Uniform\DIV7_uniform_white_splinter.paa"};
 		uniformclass = "Uniform_White_Splinter";
 	};
 	class DIV7_Uniform_White_Woodland : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_white_woodland.paa", "division7_gear\Data\Uniform\DIV7_uniform_white_woodland.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_white_woodland.paa", "division7_gear\Uniform\DIV7_uniform_white_woodland.paa"};
 		uniformclass = "Uniform_White_Woodland";
 	};
 	class DIV7_Uniform_Grey_Basic : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_grey_basic.paa", "division7_gear\Data\Uniform\DIV7_uniform_grey_basic.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_grey_basic.paa", "division7_gear\Uniform\DIV7_uniform_grey_basic.paa"};
 		uniformclass = "Uniform_Grey_Basic";
 	};
 	class DIV7_Uniform_Grey_Splinter : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_grey_splinter.paa", "division7_gear\Data\Uniform\DIV7_uniform_grey_splinter.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_grey_splinter.paa", "division7_gear\Uniform\DIV7_uniform_grey_splinter.paa"};
 		uniformclass = "Uniform_Grey_Splinter";
 	};
 	class DIV7_Uniform_Grey_Woodland : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_grey_woodland.paa", "division7_gear\Data\Uniform\DIV7_uniform_grey_woodland.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_grey_woodland.paa", "division7_gear\Uniform\DIV7_uniform_grey_woodland.paa"};
 		uniformclass = "Uniform_Grey_Woodland";
 	};
 	class DIV7_Uniform_Red_Splinter : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_red_splinter.paa", "division7_gear\Data\Uniform\DIV7_uniform_red_splinter.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_red_splinter.paa", "division7_gear\Uniform\DIV7_uniform_red_splinter.paa"};
 		uniformclass = "Uniform_Red_Splinter";
 	};
 	class DIV7_Uniform_Red_Woodland : DIV7_Base_Uniform
 	{
 		scope = 1;
-		hiddenSelectionsTextures[] = {"division7_gear\Data\Uniform\DIV7_uniform_red_woodland.paa", "division7_gear\Data\Uniform\DIV7_uniform_red_woodland.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\Uniform\DIV7_uniform_red_woodland.paa", "division7_gear\Uniform\DIV7_uniform_red_woodland.paa"};
 		uniformclass = "Uniform_Red_Woodland";
 	};
 };

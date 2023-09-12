@@ -2,26 +2,26 @@
 	<Package name="ACE3ArsenalEX">
 		<Container name="NameCategory">
 			<Key ID="STR_DIV7_Unifroms">
-			    <Original>Unifroms Sets of Division-7</Original>
+			    <Original>Uniform sets of the Division-7</Original>
 			    <Russian>Комплекты юниформы 7ой дивизии</Russian>
 			</Key>
 			<Key ID="STR_DIV7_Unifroms_Сamouflages">
-			    <Original>Unifroms camouflages of Division-7</Original>
+			    <Original>Uniform camoflauges of the Division-7</Original>
 			    <Russian>Камуфляжи униформы</Russian>
 			</Key>
 			<Key ID="STR_DIV7_Unifroms_Colors">
-			    <Original>Unifroms colors of Division-7</Original>
+			    <Original>Uniform colours of the Division-7</Original>
 			    <Russian>Цвета униформы</Russian>
 			</Key>
 			<Key ID="STR_DIV7_Helmets">
-			    <Original>Unifroms Sets of Division-7</Original>
+			    <Original>Helmets sets of Division-7</Original>
 			    <Russian>Шлема 7ой дивизии</Russian>
 			</Key>
-			<Key ID="STR_DIV7_Helmets_Color">
+			<Key ID="STR_DIV7_CH252D_Color">
 			    <Original>Helmet Band color</Original>
 			    <Russian>Цвет полосы шлема</Russian>
 			</Key>
-			<Key ID="STR_DIV7_Helmets_ColorVisor">
+			<Key ID="STR_DIV7_CH252D_ColorVisor">
 			    <Original>Visor color</Original>
 			    <Russian>Цвет визора</Russian>
 			</Key>
