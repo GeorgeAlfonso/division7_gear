@@ -1,4 +1,4 @@
 .vscode
-/Data/_materials
-/Data/_textures
-/Data/Uniform
+_materials
+_textures
+Uniform

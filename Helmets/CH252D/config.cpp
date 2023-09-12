@@ -38,31 +38,31 @@ class XtdGearModels
 				class white 
 				{
 					label = "$STR_Color_White";
-					image = "#(rgb,8,8,3)color(0,0,0,1)";
+					image = "#(rgb,8,8,3)color(0.9,0.9,0.9,1)";
 				};
 
 				class yellow	
 				{
 					label = "$STR_Color_Yellow";
-					image = "#(rgb,8,8,3)color(0.80,0.8,0,1)";
+					image = "#(rgb,8,8,3)color(0.64,0.56,0.14,1)";
 				};
 
 				class blue 
 				{
 					label = "$STR_Color_Blue";
-					image = "#(rgb,8,8,3)color(0.0,0,0.51,1)";
+					image = "#(rgb,8,8,3)color(0.18,0.22,0.54,1)";
 				};
 
 				class red
 				{
 					label = "$STR_Color_Red";
-					image = "#(rgb,8,8,3)color(0.8,0,0,1)";
+					image = "#(rgb,8,8,3)color(0.48,0.13,0.13,1)";
 				};
 
 				class green 
 				{
 					label = "$STR_Color_Green";
-					image = "#(rgb,8,8,3)color(0.8,0,0,1)";
+					image = "#(rgb,8,8,3)color(0.2,0.34,0.08,1)";
 				};
 			};
 
@@ -103,6 +103,8 @@ class XtdGearModels
 				};
 			};
 		};
+
+
 	};
 };
 
@@ -285,7 +287,7 @@ class CfgWeapons
 		scope = 0;
 		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
-		hiddenSelectionsMaterials[] = {"division7_gear\Data\_materials\odst_helmet.rvmat"};
+		hiddenSelectionsMaterials[] = {"division7_gear\_materials\odst_helmet.rvmat", "division7_gear\_materials\odst_helmet_visor.rvmat"};
 		class ItemInfo : HeadgearItem
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
@@ -314,7 +316,7 @@ class CfgWeapons
 	class DIV7_CH252D_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa"};
-		hiddenSelectionsMaterials[] = {"division7_gear\Data\_materials\odst_helmet.rvmat"};
+		hiddenSelectionsMaterials[] = {"division7_gear\_materials\odst_helmet.rvmat"};
 		class ItemInfo : HeadgearItem
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -323,7 +325,7 @@ class CfgWeapons
 			passThrough = 0.1;
 			hiddenSelections[] = {"camo", "H_Ghillie"};
 			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa"};
-			hiddenSelectionsMaterials[] = {"division7_gear\Data\_materials\odst_helmet.rvmat"};
+			hiddenSelectionsMaterials[] = {"division7_gear\_materials\odst_helmet.rvmat"};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -361,355 +363,355 @@ class CfgWeapons
 	class DIV7_CH252D_White_Basic : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [WHITE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_White_Basic_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa"};
 	};
 
 		class DIV7_CH252D_White_VDark : DIV7_CH252D_White_Basic
 		{
 			displayName = "[DIV7] CH252D Helmet [WHITE]";
-			hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+			hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_White_VDark_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 			dlc = "DIV7";
 			author = "Division-7";
-			hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa"};
+			hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa"};
 	};
 
 	class DIV7_CH252D_White_VBlue : DIV7_CH252D_White_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [WHITE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_White_VBlue_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa"};
 	};
 
 	class DIV7_CH252D_White_VGreen : DIV7_CH252D_White_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [WHITE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_White_VGreen_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa"};
 	};
 
 	class DIV7_CH252D_White_VRed : DIV7_CH252D_White_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [WHITE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_White_VRed_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa"};
 	};
 
 	class DIV7_CH252D_White_VYellow : DIV7_CH252D_White_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [WHITE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa", "division7_gear\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_White_VYellow_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_white.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_white.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_Basic : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [YELLOW]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_Basic_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VDark : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [YELLOW]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VDark_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VBlue : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [YELLOW]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VBlue_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VGreen : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [YELLOW]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VGreen_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VRed : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [YELLOW]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VRed_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VYellow : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [YELLOW]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa", "division7_gear\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Yellow_VYellow_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		dlc = "DIV7";
 		author = "Division-7";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_yellow.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_yellow.paa"};
 	};
 
 	class DIV7_CH252D_Red_Basic : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [RED]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Red_Basic_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa"};
 	};
 
 	class DIV7_CH252D_Red_VDark : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [RED]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Red_VDark_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa"};
 	};
 
 	class DIV7_CH252D_Red_VBlue : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [RED]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Red_VBlue_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa"};
 	};
 
 	class DIV7_CH252D_Red_VGreen : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [RED]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Red_VGreen_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa"};
 	};
 
 	class DIV7_CH252D_Red_VRed : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [RED]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Red_VRed_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa"};
 	};
 
 	class DIV7_CH252D_Red_VYellow : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [RED]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa", "division7_gear\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Red_VYellow_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_red.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_red.paa"};
 	};
 
 	class DIV7_CH252D_Blue_Basic : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [BLUE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Blue_Basic_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VDark : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [BLUE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VDark_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VBlue : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [BLUE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VBlue_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VGreen : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [BLUE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VGreen_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VRed : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [BLUE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VRed_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VYellow : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [BLUE]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa", "division7_gear\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Blue_VYellow_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_blue.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_blue.paa"};
 	};
 
 	class DIV7_CH252D_Green_Basic : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [GREEN]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Green_Basic_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
 
 	class DIV7_CH252D_Green_VDark : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [GREEN]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\_textures\CH252D\div7_odst_visor_dark.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Green_VDark_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
 
 	class DIV7_CH252D_Green_VBlue : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [GREEN]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\_textures\CH252D\div7_odst_visor_blue.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Green_VBlue_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
 
 	class DIV7_CH252D_Green_VGreen : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [GREEN]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\_textures\CH252D\div7_odst_visor_green.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	
 	class DIV7_CH252D_Green_VGreen_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
 
 	class DIV7_CH252D_Green_VRed : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [GREEN]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\_textures\CH252D\div7_odst_visor_red.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Green_VRed_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
 	
 	class DIV7_CH252D_Green_VYellow : DIV7_CH252D_Helmet_Basic
 	{
 		displayName = "[DIV7] CH252D Helmet [GREEN]";
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\Data\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa", "division7_gear\_textures\CH252D\div7_odst_visor_yellow.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Green_VYellow_dp : DIV7_CH252D_Helmet_Base_dp
 	{
-		hiddenSelectionsTextures[] = {"division7_gear\Data\_textures\CH252D\div7_odst_helmet_green.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
 };
 
