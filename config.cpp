@@ -21,12 +21,12 @@ class XtdGearModels
 	{
 		class DIV7_Uniforms
 		{
-			label = "$STR_DIV7_Uniforms";
+			label = "$STR_DIV7_Unifroms";
 			author = "Division-7";
 			options[] = {"color", "camouflage"};
 			class color
 			{
-				label = "$STR_DIV7_Unifroms_Colors";
+				label = "$STR_DIV7_Unifroms_Сolors";
 				values[] = {"black", "grey", "white", "red"};
 				alwaysSelectable = 1;
 				class black
@@ -52,7 +52,7 @@ class XtdGearModels
 			};
 			class camouflage
 			{
-				label = "$STR_DIV7_Unifroms_Camouflages";
+				label = "$STR_DIV7_Unifroms_Сamouflages";
 				values[] = {"basic", "splinter", "woodland"};
 				alwaysSelectable = 1;
 				class basic
@@ -69,6 +69,7 @@ class XtdGearModels
 				};
 			};
 		};
+
 	};
 };
 
@@ -311,47 +312,6 @@ class CfgWeapons
 		{
 			uniformClass = "DIV7_Uniform_Red_Woodland";
 		};
-	};
-
-	class OPTRE_UNSC_CH252D_Helmet;
-	class DIV7_CH252D_Helmet_Base : OPTRE_UNSC_CH252D_Helmet
-	{
-		scope = 0;
-		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
-		hiddenSelectionsMaterials[] = {"division7_gear\Data\_materials\odst_helmet.rvmat", "division7_gear\Data\_materials\odst_helmet_Visor.rvmat"};
-		class ItemInfo : HeadgearItem
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-			mass = 40;
-			modelSides[] = {6};
-			passThrough = 0.1;
-			hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName = "HitHead";
-					armor = 30;
-					passThrough = 0.1;
-				};
-				class Face
-				{
-					hitpointName = "HitFace";
-					armor = 30;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-
-	class DIV7_CH252D_Helmet_Basic : DIV7_CH252D_Helmet_Base
-	{
-		scope = 2;
-		dlc = "DIV7";
-		author = "Division-7";
-		displayName = "[DIV7] CH252D Helmet Basic";
-		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };
 

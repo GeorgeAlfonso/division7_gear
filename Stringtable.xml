@@ -5,13 +5,25 @@
 			    <Original>Unifroms Sets of Division-7</Original>
 			    <Russian>Комплекты юниформы 7ой дивизии</Russian>
 			</Key>
-			<Key ID="STR_DIV7_Unifroms_Сamouflageы">
+			<Key ID="STR_DIV7_Unifroms_Сamouflages">
 			    <Original>Unifroms camouflages of Division-7</Original>
 			    <Russian>Камуфляжи униформы</Russian>
 			</Key>
-			<Key ID="STR_DIV7_Unifroms_Сolors">
+			<Key ID="STR_DIV7_Unifroms_Colors">
 			    <Original>Unifroms colors of Division-7</Original>
 			    <Russian>Цвета униформы</Russian>
+			</Key>
+			<Key ID="STR_DIV7_Helmets">
+			    <Original>Unifroms Sets of Division-7</Original>
+			    <Russian>Шлема 7ой дивизии</Russian>
+			</Key>
+			<Key ID="STR_DIV7_Helmets_Color">
+			    <Original>Helmet Band color</Original>
+			    <Russian>Цвет полосы шлема</Russian>
+			</Key>
+			<Key ID="STR_DIV7_Helmets_ColorVisor">
+			    <Original>Visor color</Original>
+			    <Russian>Цвет визора</Russian>
 			</Key>
 		</Container>
 	</Package>
@@ -31,6 +43,22 @@
 			<Key ID="STR_Color_White">
 			    <Original>White</Original>
 			    <Russian>Белый</Russian>
+			</Key>
+			<Key ID="STR_Color_Blue">
+			    <Original>Blue</Original>
+			    <Russian>Синий</Russian>
+			</Key>
+			<Key ID="STR_Color_Yellow">
+			    <Original>Yellow</Original>
+			    <Russian>Желтый</Russian>
+			</Key>
+			<Key ID="STR_Color_Green">
+			    <Original>Green</Original>
+			    <Russian>Зеленый</Russian>
+			</Key>
+			<Key ID="STR_Color_no">
+			    <Original>No</Original>
+			    <Russian>Нет</Russian>
 			</Key>
 		</Container>
 		<Container name="Uniform_Sets">
@@ -85,6 +113,12 @@
 			<Key ID="STR_ODST_BDU_Red_Woodland">
 			    <Original>[DIV7]ODST BDU Red Woodland</Original>
 			    <Russian>[DIV7] Красная полевая форма УВОД Woodland</Russian>
+			</Key>
+		</Container>
+		<Container name="Uniform_Sets">
+			<Key ID="STR_Red_Splinter">
+			    <Original>[DIV7] CH252D [WHITE] Helmet</Original>
+			    <Russian>[DIV7] CH252D [Белый]</Russian>
 			</Key>
 		</Container>
 	</Package>
