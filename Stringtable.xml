@@ -17,6 +17,10 @@
 			    <Original>Helmets sets of Division-7</Original>
 			    <Russian>Шлема 7ой дивизии</Russian>
 			</Key>
+			<Key ID="STR_DIV7_M52D">
+			    <Original>Vests sets of Division-7</Original>
+			    <Russian>Броня 7ой дивизии</Russian>
+			</Key>
 			<Key ID="STR_DIV7_CH252D_Color">
 			    <Original>Helmet Band color</Original>
 			    <Russian>Цвет полосы шлема</Russian>
@@ -24,6 +28,10 @@
 			<Key ID="STR_DIV7_CH252D_ColorVisor">
 			    <Original>Visor color</Original>
 			    <Russian>Цвет визора</Russian>
+			</Key>
+			<Key ID="STR_DIV7_M52D_Color">
+			    <Original>Vest Color</Original>
+			    <Russian>Цвет брони</Russian>
 			</Key>
 		</Container>
 	</Package>
@@ -59,6 +67,10 @@
 			<Key ID="STR_Color_no">
 			    <Original>No</Original>
 			    <Russian>Нет</Russian>
+			</Key>
+			<Key ID="STR_Color_basic">
+			    <Original>basic</Original>
+			    <Russian>Базовый</Russian>
 			</Key>
 		</Container>
 		<Container name="Uniform_Sets">
@@ -119,6 +131,12 @@
 			<Key ID="STR_Red_Splinter">
 			    <Original>[DIV7] CH252D [WHITE] Helmet</Original>
 			    <Russian>[DIV7] CH252D [Белый]</Russian>
+			</Key>
+		</Container>
+				<Container name="Uniform_Sets">
+			<Key ID="STR_M52D_Grey">
+			    <Original>[DIV7] M52D Grey</Original>
+			    <Russian>[DIV7] CH252D Серый</Russian>
 			</Key>
 		</Container>
 	</Package>
