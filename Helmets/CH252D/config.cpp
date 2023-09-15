@@ -1,5 +1,3 @@
-#define _ARMA_
-
 class CfgPatches
 {
 	class division7_gear_ch252d
@@ -7,7 +5,7 @@ class CfgPatches
 		author = "Division-7";
 		url = "https://discord.gg/c2BgeFMgqk";
 		units[] = {};
-		weapons[] = {"Uniform_Black_Basic", "Uniform_Black_Splinter", "Uniform_Black_Woodland", "Uniform_White_Basic", "Uniform_White_Splinter", "Uniform_White_Woodland", "Uniform_Grey_Basic", "Uniform_Grey_Splinter", "Uniform_Grey_Woodland", "Uniform_Red_Splinter", "Uniform_Red_Woodland"};
+		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
 		requiredVersion = 0.1;
@@ -104,7 +102,21 @@ class XtdGearModels
 			};
 		};
 
-
+		class DIV7_CH252D_Helmets_Custom
+		{
+			label = "$STR_DIV7_Helmets";
+			author = "Division-7";
+			options[] = {"camo"};
+			class camo 
+			{
+				label = "сamo";
+				values[] = {"anamnez"};
+				alwaysSelectable = 1;
+				class anamnez {
+					label = "anamnez";
+				};
+			};
+		};
 	};
 };
 
@@ -271,6 +283,12 @@ class XtdGearInfos
 		{
 			colorVisor = "yellow";
 		};
+
+		class DIV7_CH252D_Custom_Anamnez 
+		{
+			model = "DIV7_CH252D_Helmets_Custom";
+			camo = "anamnez";
+		};
 	};
 };
 
@@ -287,7 +305,7 @@ class CfgWeapons
 		scope = 0;
 		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
-		hiddenSelectionsMaterials[] = {"division7_gear\_materials\odst_helmet.rvmat", "division7_gear\_materials\odst_helmet_visor.rvmat"};
+		hiddenSelectionsMaterials[] = {"division7_gear\_materials\CH252.rvmat", "division7_gear\_materials\CH252_V.rvmat"};
 		class ItemInfo : HeadgearItem
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
@@ -316,7 +334,7 @@ class CfgWeapons
 	class DIV7_CH252D_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa"};
-		hiddenSelectionsMaterials[] = {"division7_gear\_materials\odst_helmet.rvmat"};
+		hiddenSelectionsMaterials[] = {"division7_gear\_materials\CH252.rvmat"};
 		class ItemInfo : HeadgearItem
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -325,7 +343,7 @@ class CfgWeapons
 			passThrough = 0.1;
 			hiddenSelections[] = {"camo", "H_Ghillie"};
 			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa"};
-			hiddenSelectionsMaterials[] = {"division7_gear\_materials\odst_helmet.rvmat"};
+			hiddenSelectionsMaterials[] = {"division7_gear\_materials\CH252.rvmat"};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -713,5 +731,17 @@ class CfgWeapons
 	{
 		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
 	};
-};
 
+	/*
+	class DIV7_CH252D_Custom_Anamnez : DIV7_CH252D_Helmet_Basic
+	{
+		displayName = "[DIV7] CH252D Helmet [Anamnez]";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_anamnez_helmet.paa", "division7_gear\_textures\CH252D\div7_anamnez_helmetvisor.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+
+	class DIV7_CH252D_Custom_Anamnez_dp : DIV7_CH252D_Helmet_Base_dp
+	{
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_anamnez_helmet.paa"};
+	};
+	*/
+};
