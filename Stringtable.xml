@@ -33,6 +33,16 @@
 			    <Original>Vest Color</Original>
 			    <Russian>Цвет брони</Russian>
 			</Key>
+			<Key ID="STR_DIV7_ECH252">
+			    <Original>Pilots Helmets</Original>
+			    <Russian>Шлема пилотов</Russian>
+			</Key>
+			<Key ID="STR_DIV7_ECH252_CAMO">
+			    <Original>Helmet camo</Original>
+			    <Russian>Шлем пилотов</Russian>
+			</Key>
+
+			
 		</Container>
 	</Package>
 		<Container name="Colors_Camouflages_Sets">
@@ -133,11 +143,81 @@
 			    <Russian>[DIV7] CH252D [Белый]</Russian>
 			</Key>
 		</Container>
-				<Container name="Uniform_Sets">
+		<Container name="Uniform_Sets">
 			<Key ID="STR_M52D_Grey">
 			    <Original>[DIV7] M52D Grey</Original>
-			    <Russian>[DIV7] CH252D Серый</Russian>
+			    <Russian>[DIV7] M52D Серый</Russian>
+			</Key>
+			<Key ID="STR_M52D_Green">
+			    <Original>[DIV7] M52D Green</Original>
+			    <Russian>[DIV7] M52D Зеленый</Russian>
+			</Key>
+			<Key ID="STR_M52D_Red">
+			    <Original>[DIV7] M52D Red</Original>
+			    <Russian>[DIV7] M52D Красный</Russian>
+			</Key>
+			<Key ID="STR_M52D_White">
+			    <Original>[DIV7] M52D White</Original>
+			    <Russian>[DIV7] M52D Белый</Russian>
+			</Key>
+			<Key ID="STR_M52D_Yellow">
+			    <Original>[DIV7] M52D Yellow</Original>
+			    <Russian>[DIV7] M52D Желтый</Russian>
+			</Key>
+			<Key ID="STR_M52D_Blue">
+			    <Original>[DIV7] M52D Blue</Original>
+			    <Russian>[DIV7] M52D Синий</Russian>
 			</Key>
 		</Container>
+
+		<Container name="Custom_Names">
+			<Key ID="STR_Name_Fleecer">
+			    <Original>Fleecer</Original>
+			    <Russian>Fleecer</Russian>
+			</Key>
+			<Key ID="STR_Name_Maskit">
+			    <Original>Maskit</Original>
+			    <Russian>Маскит</Russian>
+			</Key>
+		</Container>
+
+		<Container name="Custom_M52D">
+			
+			
+		</Container>
+
+		<Container name="Custom_M52A">
+			<Key ID="STR_DIV7_M52A">
+			    <Original>[DIV7] M52A</Original>
+			    <Russian>[DIV7] M52A</Russian>
+			</Key>
+			<Key ID="STR_DIV7_M52A_Fleecer">
+			    <Original>[DIV7] M52A (Fleecer)</Original>
+			    <Russian>[DIV7] M52A (Fleecer)</Russian>
+			</Key>
+			<Key ID="STR_DIV7_M52A_Maskit">
+			    <Original>[DIV7] M52A (Maskit)</Original>
+			    <Russian>[DIV7] M52A (Maskit)</Russian>
+			</Key>
+		</Container>
+
+		<Container name="Custom_CH252D">
+			
+		</Container>
+		<Container name="Custom_ECH252">
+			<Key ID="STR_ECH252_Pilot">
+			    <Original>[DIV7] ECH252</Original>
+			    <Russian>[DIV7] ECH252</Russian>
+			</Key>
+			<Key ID="STR_ECH252_Fleecer">
+			    <Original>[DIV7] ECH252 (Fleecer)</Original>
+			    <Russian>[DIV7] ECH252 (Fleecer)</Russian>
+			</Key>
+			<Key ID="STR_ECH252_Maskit">
+			    <Original>[DIV7] ECH252 (Maskit)</Original>
+			    <Russian>[DIV7] ECH252 (Maskit)</Russian>
+			</Key>
+		</Container>
+
 	</Package>
 </Project>
