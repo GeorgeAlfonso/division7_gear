@@ -117,6 +117,28 @@ class XtdGearModels
 				};
 			};
 		};
+	
+		class DIV7_ECH252_Custom_Helmets 
+		{
+			label = "$STR_DIV7_ECH252";
+			author = "Division-7";
+			options[] = {"camo"};
+			class camo {
+				label = "$STR_DIV7_ECH252_CAMO";
+				values[] = {"basic", "fleecer", "maskit"};
+				class basic
+				{
+					label = "basic";
+				};
+				class fleecer {
+					label = "$STR_Name_Fleecer";
+				};
+
+				class maskit {
+					label = "$STR_Name_Maskit";
+				};
+			};
+		};
 	};
 };
 
@@ -284,7 +306,25 @@ class XtdGearInfos
 			colorVisor = "yellow";
 		};
 
-		class DIV7_CH252D_Custom_Anamnez 
+		class DIV7_CH252_Pilot 
+		{
+			model = "DIV7_ECH252_Custom_Helmets";
+			camo = "basic";
+		};
+
+		class DIV7_CH252_Fleecer
+		{
+			model = "DIV7_ECH252_Custom_Helmets";
+			camo = "fleecer";
+		};
+
+		class DIV7_CH252_Maskit 
+		{
+			model = "DIV7_ECH252_Custom_Helmets";
+			camo = "maskit";
+		};
+
+		class DIV7_CH252D_Custom_Anamnez
 		{
 			model = "DIV7_CH252D_Helmets_Custom";
 			camo = "anamnez";
@@ -730,6 +770,30 @@ class CfgWeapons
 	class DIV7_CH252D_Green_VYellow_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\div7_odst_helmet_green.paa"};
+	};
+
+	class OPTRE_UNSC_CH252_Helmet2_Vacuum_WDL;
+	class DIV7_CH252_Pilot : OPTRE_UNSC_CH252_Helmet2_Vacuum_WDL
+	{
+		dlc = "DIV7";
+		author = "Makarov-B312";
+		displayName = "$STR_ECH252_Pilot";
+		model = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\ECH252\DIV7_Pilot_helmet_co.paa", "division7_gear\_textures\ECH252\DIV7_Pilot_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class DIV7_CH252_Fleecer : DIV7_CH252_Pilot
+	{
+		dlc = "DIV7";
+		author = "Makarov-B312";
+		displayName = "$STR_ECH252_Fleecer";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\ECH252\DIV7_Pilot_helmet_fleecer_co.paa", "division7_gear\_textures\ECH252\div7_pilot_helmet_visor_fleecer_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class DIV7_CH252_Maskit : DIV7_CH252_Pilot
+	{
+		dlc = "DIV7";
+		author = "Makarov-B312";
+		displayName = "$STR_ECH252_Maskit";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\ECH252\DIV7_Pilot_helmet_maskit_co.paa", "division7_gear\_textures\ECH252\div7_pilot_helmet_visor_maskit_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	/*
