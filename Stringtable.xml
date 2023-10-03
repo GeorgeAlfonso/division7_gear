@@ -70,6 +70,10 @@
 			    <Original>Yellow</Original>
 			    <Russian>Желтый</Russian>
 			</Key>
+			<Key ID="STR_Color_Orange">
+			    <Original>Orange</Original>
+			    <Russian>Оранжевый</Russian>
+			</Key>
 			<Key ID="STR_Color_Green">
 			    <Original>Green</Original>
 			    <Russian>Зеленый</Russian>

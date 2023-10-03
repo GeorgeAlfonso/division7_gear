@@ -67,7 +67,7 @@ class XtdGearModels
 			class colorVisor 
 			{
 				label = "$STR_DIV7_CH252D_ColorVisor";
-				values[] = {"no", "dark", "yellow", "blue", "red", "green"};
+				values[] = {"no", "dark", "orange", "blue", "red", "green"};
 				alwaysSelectable = 1;
 
 				class dark
@@ -75,9 +75,9 @@ class XtdGearModels
 					label = "$STR_Color_Black";
 				};
 
-				class yellow
+				class orange
 				{
-					label = "$STR_Color_Yellow";
+					label = "$STR_Color_Orange";
 				};
 
 				class blue
@@ -175,7 +175,7 @@ class XtdGearInfos
 
 		class DIV7_CH252D_White_VYellow : DIV7_CH252D_White_Basic
 		{
-			colorVisor = "yellow";
+			colorVisor = "orange";
 		};
 
 		class DIV7_CH252D_Yellow_Basic
@@ -207,7 +207,7 @@ class XtdGearInfos
 
 		class DIV7_CH252D_Yellow_VYellow : DIV7_CH252D_Yellow_Basic
 		{
-			colorVisor = "yellow";
+			colorVisor = "orange";
 		};
 
 		class DIV7_CH252D_Blue_Basic
@@ -239,7 +239,7 @@ class XtdGearInfos
 
 		class DIV7_CH252D_Blue_VYellow : DIV7_CH252D_Blue_Basic
 		{
-			colorVisor = "yellow";
+			colorVisor = "orange";
 		};
 
 		class DIV7_CH252D_Red_Basic
@@ -271,7 +271,7 @@ class XtdGearInfos
 
 		class DIV7_CH252D_Red_VYellow : DIV7_CH252D_Red_Basic
 		{
-			colorVisor = "yellow";
+			colorVisor = "orange";
 		};
 
 		class DIV7_CH252D_Green_Basic
@@ -303,7 +303,7 @@ class XtdGearInfos
 
 		class DIV7_CH252D_Green_VYellow : DIV7_CH252D_Green_Basic
 		{
-			colorVisor = "yellow";
+			colorVisor = "orange";
 		};
 
 		class DIV7_CH252_Pilot 
