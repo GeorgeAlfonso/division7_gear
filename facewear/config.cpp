@@ -15,8 +15,8 @@ class CfgPatches
 
 class CfgWeapons
 {
-  class NVGoggles;
-  class DIV7_HUL3 : NVGoggles
+  class OPTRE_NVG;
+  class DIV7_HUL3 : OPTRE_NVG
   {
     dlc = "DIV7";
     author = "EpicHoma";
@@ -25,8 +25,7 @@ class CfgWeapons
     visionMode[] =
     {
         "Normal",
-        "NVG",
-        "TI"
+        "NVG"
     };
     thermalMode[] = {0};
     class ItemInfo
@@ -48,8 +47,7 @@ class CfgWeapons
     visionMode[] =
     {
       "Normal",
-      "NVG",
-      "TI"
+      "NVG"
     };
     thermalMode[] = {0};
     class ItemInfo
@@ -62,4 +60,32 @@ class CfgWeapons
     };
   };
 
+};
+
+class CfgGlasses
+{
+  class G_Spectacles;
+  class DIV7_CBRN : G_Spectacles
+  {
+    dlc = "DIV7";
+    scope = 2;
+    scopeArsenal = 2;
+    author = "EpicHoma";
+    displayName = "[DIV7] CBRN";
+    picture = "\division7_gear\facewear\CBRN\Icon.paa";
+    model = "division7_gear\facewear\CBRN\CBRN.p3d";
+    identitytypes[] = {};
+    hiddenSelections[] = {"CBRN"};
+    hiddenSelectionsTextures[] = {"division7_gear\facewear\CBRN\DIV7_CBRN_co.paa"};
+    hiddenSelectionsMaterials[] = {"division7_gear\facewear\CBRN\DIV7_CBRN.rvmat"};
+  };
+
+  class CBRN_S : DIV7_CBRN
+  {
+    dlc = "DIV7";
+    scope = 2;
+    scopeArsenal = 2;
+    displayName = "[DIV7] CBRN S1";
+    model = "division7_gear\facewear\CBRN\CBRN_S.p3d";
+  };
 };
