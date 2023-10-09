@@ -64,25 +64,32 @@ class XtdGearModels
 				};
 			};
 		};
-	
-		class DIV7_VEST_M52A 
+
+		class DIV7_VEST_M52D_Custom
 		{
-			label = "$STR_DIV7_M52A";
+			label = "$STR_DIV7_M52D";
 			author = "Division-7";
 			options[] = {"camo"};
-			class camo {
-				label = "$STR_DIV7_ECH252_CAMO";
-				values[] = { "basic", "fleecer", "maskit"};
-				class basic
+			class camo
+			{
+				label = "сamo";
+				values[] = {"anamnez", "collector", "nomad","homa"};
+				alwaysSelectable = 1;
+				class anamnez
 				{
-					label = "basic";
+					label = "Anamnez";
 				};
-				class fleecer {
-					label = "$STR_Name_Fleecer";
+				class collector
+				{
+					label = "Collector";
 				};
-
-				class maskit {
-					label = "$STR_Name_Maskit";
+				class nomad
+				{
+					label = "Nomad";
+				};
+				class homa
+				{
+					label = "Homa";
 				};
 			};
 		};
@@ -124,20 +131,28 @@ class XtdGearInfos
 			color = "green";
 		};
 
-		class DIV7_UNSC_M52A_Pilot 
+		class DIV7_UNSC_M52D_Custom_Anamnez
 		{
-			model = "DIV7_VEST_M52A";
-			camo = "basic";
+			model = "DIV7_VEST_M52D_Custom";
+			camo = "anamnez";
 		};
 
-		class DIV7_UNSC_M52A_Fleecer : DIV7_UNSC_M52A_Pilot
+		class DIV7_UNSC_M52D_Custom_Collector
 		{
-			camo = "fleecer";
+			model = "DIV7_VEST_M52D_Custom";
+			camo = "collector";
 		};
 
-		class DIV7_UNSC_M52A_Maskit : DIV7_UNSC_M52A_Pilot
+		class DIV7_UNSC_M52D_Custom_Nomad
 		{
-			camo = "maskit";
+			model = "DIV7_VEST_M52D_Custom";
+			camo = "nomad";
+		};
+
+		class DIV7_UNSC_M52D_Custom_Homa
+		{
+			model = "DIV7_VEST_M52D_Custom";
+			camo = "homa";
 		};
 	};
 };
@@ -215,11 +230,9 @@ class CfgWeapons
 		};
 	};
 
+
 	class DIV7_UNSC_M52D_Basic : DIV7_UNSC_M52D_Base
 	{
-		scope = 0;
-		scopeArsenal = 0;
-		scopeCurator = 0;
 		displayName = "[DIV7] M52D Basic";
 		hiddenSelectionsTextures[] = {"division7_gear\_textures\M52D\div7_vest_odst_co.paa", "division7_gear\_textures\M52D\div7_armor_odst_co.paa", "division7_gear\_textures\M52D\div7_legs_odst_co", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\odst_armor_co.paa"};
 	};
@@ -310,6 +323,46 @@ class CfgWeapons
 		};
 	};
 
+	class DIV7_UNSC_M52D_Custom_Collector : DIV7_UNSC_M52D_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "[DIV7] M52D Collector";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\M52D\custom\div7_collector_vest_odst_co.paa", "division7_gear\_textures\M52D\div7_armor_odst_co.paa", "division7_gear\_textures\M52D\custom\div7_collector_legs_odst_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "division7_gear\_textures\M52D\custom\div7_collector_armor_co.paa"};
+		class ItemInfo : ItemInfo 
+		{
+			hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "camo5", "A_KneesMarLeft", "A_KneesMarRight", "A_Ghillie", "AS_LargeLeft", "AS_LargeRight", "AS_MediumLeft", "AS_MediumRight", "AS_ODSTLeft", "AS_ODSTRight", "AS_ODSTCQBRight", "AS_ODSTSniperLeft", "AS_SmallLeft", "AS_SmallRight", "A_TacPad", "AP_Canteen", "AP_SG", "AP_AR", "AP_BR", "AP_GL", "AP_MGThigh", "AP_Pack", "AP_SMG", "AP_Pistol", "AP_Rounds", "AP_Sniper", "AP_Thigh", "APO_Knife", "APO_SMG", "APO_Sniper", "CustomKit_Scorch" };
+		};
+	};
+
+	class DIV7_UNSC_M52D_Custom_Nomad : DIV7_UNSC_M52D_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "[DIV7] M52D Nomad";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\M52D\div7_vest_odst_co.paa", "division7_gear\_textures\M52D\div7_armor_odst_co.paa", "division7_gear\_textures\M52D\custom\DIV7_N0mad_Legs.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "division7_gear\_textures\M52D\custom\DIV7_N0mad_ArmorODST_.paa"};
+		class ItemInfo : ItemInfo
+		{
+			hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "camo5", "A_KneesMarLeft", "A_KneesMarRight", "A_Ghillie", "AS_LargeLeft", "AS_LargeRight", "AS_MediumLeft", "AS_MediumRight", "AS_ODSTCQBLeft", "AS_ODSTCQBRight", "AS_ODSTRight", "AS_ODSTSniperLeft", "AS_SmallLeft", "AS_SmallRight", "AP_AR", "AP_BR", "AP_Canteen", "AP_GL", "AP_MGThigh", "AP_AR", "AP_Pack", "AP_Pistol", "AP_Rounds", "AP_SG", "AP_SMG", "AP_Sniper", "AP_Thigh", "AP_Frag", "AP_Smoke", "APO_AR", "APO_BR", "APO_Knife", "APO_SMG", "APO_Sniper", "CustomKit_Scorch"};
+		};
+	};
+
+	class DIV7_UNSC_M52D_Custom_Homa : DIV7_UNSC_M52D_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "[DIV7] M52D Test Homa";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\M52D\div7_vest_odst_co.paa", "division7_gear\_textures\M52D\div7_armor_odst_co.paa", "division7_gear\_textures\M52D\div7_legs_odst_co", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "division7_gear\_textures\M52D\div7_odst_vest_grey.paa"};
+		class ItemInfo : ItemInfo 
+		{
+			hiddenSelections[] =
+					{"camo", "camo2", "camo3", "camo4", "camo5", "", "A_KneesMarLeft", "A_KneesMarRight", "A_Ghillie", "AS_LargeLeft", "AS_LargeRight", "AS_MediumLeft", "AS_MediumRight", "AS_ODSTCQBRight", "AS_ODSTLeft", "AS_ODSTRight", "AS_ODSTSniperLeft", "AS_SmallLeft", "AS_SmallRight", "AP_AR", "AP_BR", "AP_GL", "AP_Knife", "AP_MGThigh", "AP_Pack", "AP_SG", "AP_SMG", "AP_Thigh", "AP_Frag", "AP_Smoke", "AP_Sniper", "APO_AR", "APO_BR", "APO_SMG", "CustomKit_Scorch"};
+		};
+	};
+
 	/*
 	class DIV7_UNSC_M52D_Custom_Anamnez : DIV7_UNSC_M52D_Base
 	{
@@ -317,7 +370,9 @@ class CfgWeapons
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayName = "[DIV7] M52D Test Anamnez";
-		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa", "optre_unsc_units\army\data\armor_odst_co.paa", "division7_gear\_textures\M52D\DIV7_ANAMNEZ_Legs.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "division7_gear\_textures\M52D\DIV7_anamnez_armorODST.paa"};
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\M52D\div7_vest_odst_co.paa", "division7_gear\_textures\M52D\div7_armor_odst_co.paa", "division7_gear\_textures\M52D\custom\DIV7_ANAMNEZ_Legs.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "division7_gear\_textures\M52D\custom\DIV7_ANAMNEZ_ArmorODST.paa"};
 	};
 	*/
+
+
 };
