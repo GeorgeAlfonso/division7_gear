@@ -125,27 +125,6 @@ class XtdGearModels
 			};
 		};
 	
-		class DIV7_ECH252_Custom_Helmets 
-		{
-			label = "$STR_DIV7_ECH252";
-			author = "Division-7";
-			options[] = {"camo"};
-			class camo {
-				label = "$STR_DIV7_ECH252_CAMO";
-				values[] = {"basic", "fleecer", "maskit"};
-				class basic
-				{
-					label = "basic";
-				};
-				class fleecer {
-					label = "$STR_Name_Fleecer";
-				};
-
-				class maskit {
-					label = "$STR_Name_Maskit";
-				};
-			};
-		};
 	};
 };
 
@@ -311,24 +290,6 @@ class XtdGearInfos
 		class DIV7_CH252D_Green_VYellow : DIV7_CH252D_Green_Basic
 		{
 			colorVisor = "orange";
-		};
-
-		class DIV7_CH252_Pilot 
-		{
-			model = "DIV7_ECH252_Custom_Helmets";
-			camo = "basic";
-		};
-
-		class DIV7_CH252_Fleecer
-		{
-			model = "DIV7_ECH252_Custom_Helmets";
-			camo = "fleecer";
-		};
-
-		class DIV7_CH252_Maskit 
-		{
-			model = "DIV7_ECH252_Custom_Helmets";
-			camo = "maskit";
 		};
 
 		class DIV7_CH252D_Custom_Anamnez
