@@ -19,7 +19,7 @@ class XtdGearModels
 	{
 		class DIV7_CH252D_Helmets
 		{
-			label = "$STR_DIV7_Helmets";
+			label = "$STR_DIV7_CH252D";
 			author = "Division-7";
 			options[] = {"color", "colorVisor"};
 			class color 
