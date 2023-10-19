@@ -234,8 +234,10 @@ class CfgWeapons
 	};
 	class DIV7_UNSC_M52D_Basic: DIV7_UNSC_M52D_Base
 	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
 		displayName = "[DIV7] M52D Basic";
-		hiddenSelectionsTextures[] = {"division7_gear\_textures\M52D\div7_vest_odst_co.paa","division7_gear\_textures\M52D\div7_armor_odst_co.paa","division7_gear\_textures\M52D\div7_legs_odst_co","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\odst_armor_co.paa"};
 	};
 	class DIV7_UNSC_M52D_White: DIV7_UNSC_M52D_Base
 	{
