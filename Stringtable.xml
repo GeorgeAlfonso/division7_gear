@@ -37,9 +37,9 @@
 			    <Original>Pilots Helmets</Original>
 			    <Russian>Шлема пилотов</Russian>
 			</Key>
-			<Key ID="STR_DIV7_ECH252_CAMO">
-			    <Original>Helmet camo</Original>
-			    <Russian>Шлем пилотов</Russian>
+			<Key ID="STR_DIV7_M52D">
+			    <Original>Vests camo</Original>
+			    <Russian>Броня пилотов</Russian>
 			</Key>
 
 			
@@ -140,9 +140,13 @@
 			    <Original>[DIV7]ODST BDU Red Woodland</Original>
 			    <Russian>[DIV7] Красная полевая форма УВОД Woodland</Russian>
 			</Key>
+			<Key ID="STR_ODST_BDU_Bloodshot">
+			    <Original>[DIV7]ODST BDU Bloodshot</Original>
+			    <Russian>[DIV7] Полевая форма УВОД Bloodshot</Russian>
+			</Key>
 		</Container>
-		<Container name="Uniform_Sets">
-			<Key ID="STR_Red_Splinter">
+		<Container name="Helmets_Sets">
+			<Key ID="">
 			    <Original>[DIV7] CH252D [WHITE] Helmet</Original>
 			    <Russian>[DIV7] CH252D [Белый]</Russian>
 			</Key>
@@ -186,8 +190,6 @@
 		</Container>
 
 		<Container name="Custom_M52D">
-			
-			
 		</Container>
 
 		<Container name="Custom_M52A">
