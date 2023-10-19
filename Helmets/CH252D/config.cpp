@@ -110,7 +110,7 @@ class XtdGearModels
 			class camo 
 			{
 				label = "сamo";
-				values[] = {"anamnez","collector","nomad"};
+				values[] = {"anamnez","collector", "nomad", "cherry", "sanya"};
 				alwaysSelectable = 1;
 				class anamnez {
 					label = "Anamnez";
@@ -121,6 +121,14 @@ class XtdGearModels
 				class nomad
 				{
 					label = "Nomad";
+				};
+				class cherry
+				{
+					label = "Cherry";
+				};
+				class sanya
+				{
+					label = "Sanya";
 				};
 			};
 		};
@@ -309,6 +317,18 @@ class XtdGearInfos
 			model = "DIV7_CH252D_Helmets_Custom";
 			camo = "nomad";
 		};
+
+		class DIV7_CH252D_Custom_Cherry
+		{
+			model = "DIV7_CH252D_Helmets_Custom";
+			camo = "cherry";
+		};
+
+		class DIV7_CH252D_Custom_Sanya
+		{
+			model = "DIV7_CH252D_Helmets_Custom";
+			camo = "sanya";
+		};
 	};
 };
 
@@ -325,7 +345,7 @@ class CfgWeapons
 		scope = 0;
 		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
-		hiddenSelectionsMaterials[] = {"division7_gear\_materials\CH252.rvmat", "division7_gear\_materials\CH252_V.rvmat"};
+		hiddenSelectionsMaterials[] = {"division7_gear\_materials\CH252.rvmat", "optre_unsc_units\army\data\odst_helmet_Visor.rvmat"};
 		class ItemInfo : HeadgearItem
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
@@ -778,12 +798,34 @@ class CfgWeapons
 
 	class DIV7_CH252D_Custom_Nomad : DIV7_CH252D_Helmet_Basic
 	{
-		displayName = "[DIV7] CH252D Helmet [Collector]";
+		displayName = "[DIV7] CH252D Helmet [Nomad]";
 		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\custom\DIV7_N0mad_Helmet.paa", "division7_gear\_textures\CH252D\custom\DIV7_N0mad_HelmetVisor.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 
 	class DIV7_CH252D_Custom_Nomad_dp : DIV7_CH252D_Helmet_Base_dp
 	{
 		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\custom\DIV7_N0mad_Helmet.paa"};
+	};
+
+	class DIV7_CH252D_Custom_Cherry : DIV7_CH252D_Helmet_Basic
+	{
+		displayName = "[DIV7] CH252D Helmet [Cherry]";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\custom\div7_cherry_helmet_co.paa", "optre_unsc_units\army\data\odst_helmet_visor_co.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+
+	class DIV7_CH252D_Custom_Cherry_dp : DIV7_CH252D_Helmet_Base_dp
+	{
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\custom\div7_cherry_helmet_co.paa"};
+	};
+
+	class DIV7_CH252D_Custom_Sanya : DIV7_CH252D_Helmet_Basic
+	{
+		displayName = "[DIV7] CH252D Helmet [Sanya]";
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\custom\div7_odst_helmet_sanya.paa", "division7_gear\_textures\CH252D\custom\div7_odst_visor_sanya.paa", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+
+	class DIV7_CH252D_Custom_Sanya_dp : DIV7_CH252D_Helmet_Base_dp
+	{
+		hiddenSelectionsTextures[] = {"division7_gear\_textures\CH252D\custom\div7_odst_helmet_sanya.paa"};
 	};
 };
