@@ -17,14 +17,14 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class DIV7_VEST_M52A
+		class DIV7_VEST_M52A_Pilot
 		{
-			label = "$STR_DIV7_M52A";
+			label = "$STR_DIV7_M52A_Pilot";
 			author = "Division-7";
 			options[] = {"camo"};
 			class camo
 			{
-				label = "$STR_DIV7_M52D";
+				label = "camo";
 				values[] = {"basic", "fleecer", "maskit"};
 				class basic
 				{
@@ -34,7 +34,6 @@ class XtdGearModels
 				{
 					label = "$STR_Name_Fleecer";
 				};
-
 				class maskit
 				{
 					label = "$STR_Name_Maskit";
@@ -50,7 +49,7 @@ class XtdGearInfos
 	{
 		class DIV7_UNSC_M52A_Pilot
 		{
-			model = "DIV7_VEST_M52A";
+			model = "DIV7_VEST_M52A_Pilot";
 			camo = "basic";
 		};
 

@@ -34,10 +34,29 @@ class XtdGearModels
 				{
 					label = "$STR_Name_Fleecer";
 				};
-
 				class maskit
 				{
 					label = "$STR_Name_Maskit";
+				};
+			};
+		};
+		class DIV7_CH252_Light_Infantry
+		{
+			label = "$STR_DIV7_CH252_LI";
+			author = "Division-7";
+			options[] = {"vacuum"};
+			class vacuum
+			{
+				alwaysSelectable = 1;
+				label = "$STR_DIV7_CH252_Vacuum";
+				values[] = {"no","yes"};
+				class no
+				{
+					label = "$STR_DIV7_NO";
+				};
+				class yes
+				{
+					label = "$STR_DIV7_YES";
 				};
 			};
 		};
@@ -64,6 +83,18 @@ class XtdGearInfos
 		{
 			model = "DIV7_ECH252_Custom_Helmets";
 			camo = "maskit";
+		};
+
+		class DIV7_CH252_Helmet_Basic
+		{
+			model = "DIV7_CH252_Light_Infantry";
+			vacuum = "no";
+		};
+
+		class DIV7_ECH252_Helmet_Basic
+		{
+			model = "DIV7_CH252_Light_Infantry";
+			vacuum = "yes";
 		};
 	};
 };

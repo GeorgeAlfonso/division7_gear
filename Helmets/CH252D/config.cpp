@@ -104,7 +104,7 @@ class XtdGearModels
 
 		class DIV7_CH252D_Helmets_Custom
 		{
-			label = "$STR_DIV7_Helmets";
+			label = "$STR_DIV7_CH252D_Custom";
 			author = "Division-7";
 			options[] = {"camo"};
 			class camo 

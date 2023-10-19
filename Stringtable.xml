@@ -1,10 +1,6 @@
 <Project name="Division-7">
 	<Package name="ACE3ArsenalEX">
 		<Container name="NameCategory">
-			<Key ID="STR_DIV7_Unifroms">
-			    <Original>Uniform sets of the Division-7</Original>
-			    <Russian>Комплекты юниформы 7ой дивизии</Russian>
-			</Key>
 			<Key ID="STR_DIV7_Unifroms_Сamouflages">
 			    <Original>Uniform camoflauges of the Division-7</Original>
 			    <Russian>Камуфляжи униформы</Russian>
@@ -12,14 +8,6 @@
 			<Key ID="STR_DIV7_Unifroms_Colors">
 			    <Original>Uniform colours of the Division-7</Original>
 			    <Russian>Цвета униформы</Russian>
-			</Key>
-			<Key ID="STR_DIV7_Helmets">
-			    <Original>Helmets sets of Division-7</Original>
-			    <Russian>Шлема 7ой дивизии</Russian>
-			</Key>
-			<Key ID="STR_DIV7_M52D">
-			    <Original>Vests sets of Division-7</Original>
-			    <Russian>Броня 7ой дивизии</Russian>
 			</Key>
 			<Key ID="STR_DIV7_CH252D_Color">
 			    <Original>Helmet Band color</Original>
@@ -33,18 +21,47 @@
 			    <Original>Vest Color</Original>
 			    <Russian>Цвет брони</Russian>
 			</Key>
+			<Key ID="STR_DIV7_CH252_Vacuum">
+			    <Original>Vacuum Sealed</Original>
+			    <Russian>Герметичность шлема</Russian>
+			</Key>
+		</Container>
+
+		<Container name="LabelItems">
 			<Key ID="STR_DIV7_ECH252">
 			    <Original>Pilots Helmets</Original>
 			    <Russian>Шлема пилотов</Russian>
 			</Key>
-			<Key ID="STR_DIV7_M52D">
+			<Key ID="STR_DIV7_M52A_Pilot">
 			    <Original>Vests camo</Original>
 			    <Russian>Броня пилотов</Russian>
 			</Key>
-
-			
+			<Key ID="STR_DIV7_Unifroms">
+			    <Original>Uniform sets of the Division-7</Original>
+			    <Russian>Комплекты униформы</Russian>
+			</Key>
+			<Key ID="STR_DIV7_CH252D">
+			    <Original>CH252D sets of Division-7</Original>
+			    <Russian>Шлем CH252D</Russian>
+			</Key>
+			<Key ID="STR_DIV7_CH252D_Custom">
+			    <Original>Custom CH252D sets of Division-7</Original>
+			    <Russian>Персональный CH252D</Russian>
+			</Key>
+			<Key ID="STR_DIV7_CH252_LI">
+			    <Original>CH252 sets of Division-7</Original>
+			    <Russian>Шлем CH252</Russian>
+			</Key>
+			<Key ID="STR_DIV7_M52D">
+			    <Original>Vests sets of Division-7</Original>
+			    <Russian>Броня M52D</Russian>
+			</Key>
+			<Key ID="STR_DIV7_M52D_Custom">
+			    <Original>Custom vests sets of Division-7</Original>
+			    <Russian>Персональная M52D</Russian>
+			</Key>
 		</Container>
-	</Package>
+
 		<Container name="Colors_Camouflages_Sets">
 			<Key ID="STR_Color_Red">
 			    <Original>Red</Original>
@@ -189,7 +206,19 @@
 			</Key>
 		</Container>
 
+		<Container name="yes/no">
+			<Key ID="STR_DIV7_YES">
+			    <Original>Yes</Original>
+			    <Russian>Да</Russian>
+			</Key>
+			<Key ID="STR_DIV7_NO">
+			    <Original>No</Original>
+			    <Russian>Нет</Russian>
+			</Key>
+		</Container>
+
 		<Container name="Custom_M52D">
+		
 		</Container>
 
 		<Container name="Custom_M52A">
@@ -208,6 +237,8 @@
 		</Container>
 
 		<Container name="Custom_CH252D">
+		
+		</Container>
 			
 		</Container>
 		<Container name="Custom_ECH252">

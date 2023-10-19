@@ -59,7 +59,7 @@ class XtdGearModels
 		};
 		class DIV7_VEST_M52D_Custom
 		{
-			label = "$STR_DIV7_M52D";
+			label = "$STR_DIV7_M52D_Custom";
 			author = "Division-7";
 			options[] = {"camo"};
 			class camo
